@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    height: 100%;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: #D7E6E3;
+    background-image: url(./images/soup2.jpg);
+    background-size: 50%;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+.start {
+    width: 60%; 
+    min-width: 1200px;
+    height: 75%; 
+    min-height: 700px;
+    margin: 75px 0px;
+    display: flex;
+    border-radius: 75px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.2) 50%, white 50%);
+    box-shadow: 0px 10px 30px rgba(17, 17, 17, 0.1);
+}
+
+.form {
+    width: 50%;
+}
+
+.start__form {
+    padding: 50px 75px;
+}
+
+.form__header {
+    font-size: 2.2rem;
+    color:#494544;
+}
+
+.form__header--orange {
+    font-family: 'Pacifico', cursive;
+    color: #FFA801;
+    margin-bottom: 30px;
+}
+
+.form__body {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.form__row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; 
+}
+
+.form__input {
+    flex: 1;
+    padding: 10px; 
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    font-size: 1rem;
+    color: grey; 
+}
+
+.form__input:focus {
+    outline: none;
+    border: 2px solid darkgrey;
+}
+
+.form__input::placeholder {
+    color: lightgrey; 
+}
+
+/*RED STYLING IF USER INPUTS INCORRECTLY */
+/* .form__input[type='text']:invalid:focus,
+.form__input[type='email']:invalid:focus {
+  border: 1px solid #D55C5F;
+  color: #D55C5F;
+  box-shadow: none;
+} */
+
+.form__submit {
+    width: 45%;
+    font-size: 1rem;
+    border-radius: 3px;
+    border: none;
+    padding: 13px;
+    background-color: #494544;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form__disclaimer {
+    width: 45%;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #FFA801;
+    margin-bottom: 25px;
+}
+
+.form__question {
+    width: 45%;
+    color: #494544;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.form__login {
+    width: 45%;
+    font-size: 1rem;
+    border-radius: 3px;
+    border: none;
+    padding: 13px;
+    background-color: #FFA801;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 200px;
+}
+
+.form__submit:hover,
+.form__login:hover {
+    background-color: #f4bd57;
+}
